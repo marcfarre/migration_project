@@ -13,28 +13,28 @@
     RewriteCond %{REQUEST_URI} ^/_wdt$
     RewriteRule ^ $0/ [QSA,L,R=301]
     RewriteCond %{REQUEST_URI} ^/_wdt/(.+)$
-    RewriteRule ^ symfony/web/app_dev.php [QSA,L]
+    RewriteRule ^ symfony-project/web/app_dev.php [QSA,L]
 
     # _profiler_home
     RewriteCond %{REQUEST_URI} ^/_profiler$
     RewriteRule ^ $0/ [QSA,L,R=301]
     RewriteCond %{REQUEST_URI} ^/_profiler/(.+)$
-    RewriteRule ^ symfony/web/app_dev.php [QSA,L]
+    RewriteRule ^ symfony-project/web/app_dev.php [QSA,L]
 
     # _api
     RewriteCond %{REQUEST_URI} ^/api$
-    RewriteRule ^ symfony/web/app_dev.php [QSA,L]
+    RewriteRule ^ symfony-project/web/app_dev.php [QSA,L]
 
     # _api_number
     RewriteCond %{REQUEST_URI} ^/api/number$
-    RewriteRule ^ symfony/web/app_dev.php [QSA,L]
+    RewriteRule ^ symfony-project/web/app_dev.php [QSA,L]
 
     # _api_number
     RewriteCond %{REQUEST_URI} ^/index.php$
-    RewriteRule ^ symfony/web/app_dev.php [QSA,L]
+    RewriteRule ^ symfony-project/web/app_dev.php [QSA,L]
 
     RewriteCond %{REQUEST_URI} ^/$
-    RewriteRule ^ symfony/web/app_dev.php [QSA,L]
+    RewriteRule ^ symfony-project/web/app_dev.php [QSA,L]
 
 
     
